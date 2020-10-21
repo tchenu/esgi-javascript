@@ -4,9 +4,7 @@
  */
 function ucfirst(word)
 {
-    if (typeof word === "String") {
-      return word.charAt(0).toUpperCase() + word.slice(1)
-    }
+    return typeof word === "string" ? word.charAt(0).toUpperCase() + word.slice(1) : null;
 }
 
 /**
