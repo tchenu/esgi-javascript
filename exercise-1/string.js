@@ -36,3 +36,13 @@ function prop_access(object, path) {
 
     return result
 }
+
+function camelCase(string) {
+    const separators = [' ', '-', '_'];
+
+    separators.forEach(function (separator) {
+        string = string.replace(separator, '_')
+    })
+
+    return string.split('_').join('')
+}
