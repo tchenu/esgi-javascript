@@ -48,5 +48,3 @@ function camelCase(characterString)
 
     return words.join('')
 }
-
-console.log('camelCase: ' + camelCase('foo bar test'))
