@@ -32,19 +32,3 @@ function prop_access(object, path) {
 
     return result
 }
-
-/**
- * @param {*} characterString 
- */
-function camelCase(characterString)
-{
-    let words = characterString.split(' ')
-
-    for (index in words) {
-        words[index] = ucfirst(words[index])
-    }
-
-    words[0] = lcfirst(words[0])
-
-    return words.join('')
-}
